@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Дождевик на шару</title>
+  <link rel="stylesheet" href="./static/css/style.css?t=1525990036201">
+</head>
+
+<body>
+
+  <main class="jb-wrapper">
+    <img src="./static/images/bg.jpg" alt="bg" data-object-fit="cover">
+    <section class="jb-sign">
+      <img src="./static/images/sign-bg.png" alt="bg" data-object-fit="cover">
+
+      <header class="jb-sign__header">
+        <div class="jb-sign__city">
+          <input type="checkbox" id="city-chooser">
+          <label for="city-chooser" class="jb-sign__chosen-city">Санкт-Петербург</label>
+          <ul class="jb-dropdown jb-sign__dropdown">
+            <li class="jb-dropdown__item">
+              <a href="#">Ростов-на-Дону</a>
+            </li>
+          </ul>
+        </div>
+        <div class="jb-sign__club">
+          <a href="http://blankclub.ru/">клуб blank</a>
+        </div>
+      </header>
+      <section class="jb-logo jb-sign__bp-logo">
+        <img src="./static/images/bplogo.png" class="jb-logo__bp" alt="Jameson Block Party logo">
+        <img src="./static/images/backyard.png" class="jb-logo__by" alt="Backyard">
+        <img src="./static/images/rhombus.png" class="jb-logo__rhombus" alt>
+        <img src="./static/images/day.png" class="jb-logo__day" alt>
+        <img src="./static/images/rhombus.png" class="jb-logo__rhombus jb-logo__rhombus--time" alt>
+        <img src="./static/images/time.png" class="jb-logo__time" alt>
+      </section>
+      <div class="jb-sign__lineup">
+        <img src="./static/images/lineup.png" alt="lineup">
+      </div>
+      <section class="jb-sign__text">
+        <p>В Санкт-Петербург уже вернулись теплые деньки, перелётные птицы и прочие весенние радости. Следом идёт Jameson Block
+          Party, которая держит уверенный курс на север и вновь пройдет в городе на Неве.
+        </p>
+        <p>Как говорится, «ничего не планируй на» 19 мая, если не хочешь пропустить главный traveling event от пропагандистов
+          ирландского образа мысли и развлечений. Встречу назначаем в клубе Blank, занявшем бывшее здание завода «Арсенал»
+          на Арсенальной набережной. Собираемся в 20:00, будем общаться, питаться и внимать хайповому лондонскому электро-проекту
+          C.A.R.. В общем, полноценный дружеский весенний угар.
+        </p>
+        <p>К интересному, если не сказать интереснейшему, лайн-апу добавляем массу развлечений, которые могут обернуться не
+          только хорошим настроением, но и вполне осязаемой выгодой… Оформит цеха и двор, местный художник – Руслан @odintri.
+          Он же поработает над легендарными фестивальными дождевиками Jameson, которые можно будет унести с собой в лето.
+          Если успеть.
+        </p>
+      </section>
+
+      <div class="jb-sign__cta">
+        Встретимся на Jameson Block Party:
+        <br> на входе будет действовать система FC/DC.
+      </div>
+
+      <img src="./static/images/sign-rhombus.png" class="jb-sign__rhombus" alt="decor">
+
+      <div class="jb-sign__address">
+        Адрес: Арсенальная набережная, 1
+        <br> Начало в 20:00
+      </div>
+
+      <a href="#" class="btn btn--primary jb-sign__btn">
+        хочу дождевик
+      </a>
+
+      <div class="jb-sign__rules">
+        Победитель будет выбран случайным образом среди зарегистрированных пользователей сайта takeitirish.ru.
+        <br> Призы будут раздаваться по предъявлению личного письма победителя на мероприятии Block Party в клубе Blank 19 мая
+        2018
+      </div>
+
+      <img src="./static/images/hashtagged.png" class="jb-sign__hashtag" alt="#JAMESONBLOCKPARTY">
+
+      <img src="./static/images/tip.png" class="jb-sign__tip" alt="tip">
+    </section>
+  </main>
+
+  <footer class="jb-warn">
+    <span class="jb-warn__text">чрезмерное употребление алкоголя вредит вашему здоровью 18+</span>
+  </footer>
+
+  <section class="jb-popup jb-popup--email">
+    <div class="jb-popup__wrapper">
+      <div class="jb-popup__content">
+        <i class="jb-popup__close"></i>
+        <header class="jb-popup__heading">
+          Оставь ссылку на свой аккаунт в любой соцсети
+          <br> и получи призы от Jameson
+        </header>
+        <form id="jb-popup-from" action="POST">
+          <input type="email" class="jb-popup__email">
+          <button type="submit" class="btn btn--secondary jb-popup__btn jb-popup__btn--email">
+            ОК
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="jb-popup jb-popup--confirmed">
+    <div class="jb-popup__wrapper">
+      <div class="jb-popup__content">
+        <i class="jb-popup__close"></i>
+        <header class="jb-popup__heading">
+          Заявка принята.
+          <br> Возможно именно ты получишь пати-дождевик от Jameson!
+        </header>
+        <button class="btn btn--secondary jb-popup__btn jb-popup__btn--confirmed">
+          ОК
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="./static/js/script.js?t=1525990036201"></script>
+</body>
+
+</html>
